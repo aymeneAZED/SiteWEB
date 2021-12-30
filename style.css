@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans' , sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: url("images/barrett-ward-P44RIGl9V54-unsplash.jpg") no-repeat fixed;
+    background-size: cover;
+    
+}
+
+/*Barre de navigation*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav:hover {
+    color: black;
+    background-color: #E2CD6D;
+}
+
+nav:hover a{
+    color: black;
+}
+
+
+ nav h1{
+     font-size: 20px;
+     color:#E2CD6D ;
+
+ }
+
+ nav:hover h1{
+    color:black;
+
+}
+ nav .onglet{
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ nav.onglet ,a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 20px;
+    
+    cursor: pointer;
+ }
+
+ a.nav:hover{
+     color: white ;
+ }
+
+ nav .onglet input{
+     margin: 8px 20px;
+     padding: 15px;
+     border-radius: 30px;
+     border: none;
+     outline-style: none;
+     background-color: #f2f2f2;
+ }
+
+ i{
+     color: black;
+ }
+
+ nav:hover i{
+     color: black;
+ }
+
+
+/*Fin De Barre de navigation*/
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 180px;
+}
+
+header h1{
+    font-size: 50px;
+    
+}
+
+header button{
+    background-color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline-style: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E2CD6D;
+    color: blanchedalmond;
+}
+
+
+
+/*Fin Header*/
+
+/*Section Principale*/
+.main{
+    background-color: white;
+    margin-top: 500px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-right: 5px;
+    
+}
+
+
+
+.card img{
+    width: 600px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+    transition: transform 0.5s;
+}
+
+.card img:hover{
+    transform: translateY(-10px);
+}
+
+.card .card-header{
+    display: flex;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card .card-body p{
+    font-size: 25px;
+    display: flex;
+    margin-top: -15px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    color: rgb(68, 63, 63);
+}
+/*Fin de Section Principale*/
+
+/*Testament*/
+
+.testament{
+    margin-top: 200px;
+    text-align: center;
+    
+}
+
+.row{
+    display: flex;
+    text-align: center;
+}
+
+.col-3{
+    margin: 20px;
+    padding: 40px 20px;
+    background-color: #E2CD6D;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.col-3:hover{
+    transform: translateY(-10px);
+}
+
+
+.col-3 img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: white ;
+}
+
+
+.fa.fa-star{
+    font-size: 20px;
+    color: white ;
+}
+
+/*pied de page*/
+footer{
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.social-media{
+    color: white;
+    display: flex;
+    
+}
+
+.social-media a i{
+    color: white;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+a.media i.fa-instagram:hover{
+    background-clip: border-box;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    border-color: #c13584;
+
+}
+
+i.fa-snapchat-ghost:hover{
+    color: yellow;
+    border-color: yellow;
+}
+
+i.fa-twitter:hover{
+    color: rgb(15, 164, 233);
+    border-color: rgb(15, 164, 233);
+}
+/*fin de pied de page*/
+
+/*Responsive Design*/
+
+@media screen and (max-width: 640px) {
+    .nav ,h1.logo{
+        display: none;
+    }
+
+    .cards .card img{
+        width: 300px;
+        height: 300px;
+    }
+
+}
